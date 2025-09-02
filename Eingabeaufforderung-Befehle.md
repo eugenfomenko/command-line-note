@@ -2,7 +2,7 @@
 
 ##### 
 
-##### **whoami** /**fqdn** -> gibt den vollqualifizierten Benutzerprinzipalnamen, z. B. benutzername@contoso.local
+##### **whoami** /**fqdn** -> *gibt den vollqualifizierten Benutzerprinzipalnamen z. B. benutzername@contoso.local*
 
 
 
@@ -87,5 +87,6 @@
 
 
 ##### **sysdm.cpl** -> *öffnet die Systemeigenschaften (Computername, Hardware, Erweitert, Systemschutz, Remote)*
+
 
 
