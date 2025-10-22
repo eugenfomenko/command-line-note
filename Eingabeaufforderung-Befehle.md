@@ -89,21 +89,21 @@
 ##### **sysdm.cpl** --> *öffnet die Systemeigenschaften (Computername, Hardware, Erweitert, Systemschutz, Remote)*
 
 
-##### **net use**r --> *listet alle lokalen Benutzerkonten auf
-##### **net user testuser /add** --> *erstellt einen neuen Benutzer namens testuser
+##### **net use**r --> *listet alle lokalen Benutzerkonten auf*
+##### **net user testuser /add** --> *erstellt einen neuen Benutzer namens testuser*
 
-##### **net localgroup** --> *Verwaltet lokale Gruppen und zeigt deren Mitglieder an.
+##### **net localgroup** --> *Verwaltet lokale Gruppen und zeigt deren Mitglieder an.*
 
-##### **netstat** --> *Zeigt aktive Netzwerkverbindungen und offene Ports an.
-##### **netstat** -ano → *zeigt alle Verbindungen mit PID (hilfreich zur Zuordnung zu Prozessen)
+##### **netstat** --> *Zeigt aktive Netzwerkverbindungen und offene Ports an.*
+##### **netstat** -ano → *zeigt alle Verbindungen mit PID (hilfreich zur Zuordnung zu Prozessen)*
 
-##### **arp** --> *Zeigt oder löscht die ARP-Cache-Tabelle, die IP-Adressen mit MAC-Adressen verknüpft.
-##### **arp -a** --> *listet alle bekannten IP/MAC-Zuordnungen auf
+##### **arp** --> *Zeigt oder löscht die ARP-Cache-Tabelle, die IP-Adressen mit MAC-Adressen verknüpft.*
+##### **arp -a** --> *listet alle bekannten IP/MAC-Zuordnungen auf*
 
-##### **net use** --> *Zeigt verbundene Netzlaufwerke oder verbindet neue.
+##### **net use** --> *Zeigt verbundene Netzlaufwerke oder verbindet neue.*
 ##### Beispiel:
-##### **net use** --> *listet alle aktiven Netzverbindungen
-##### **net use Z: \\Server\Freigabe** --> *verbindet Netzlaufwerk Z: mit einer Freigabe
+##### **net use** --> *listet alle aktiven Netzverbindungen*
+##### **net use Z: \\Server\Freigabe** --> *verbindet Netzlaufwerk Z: mit einer Freigabe*
 
 ##### **net start** --> *Listet alle laufenden Windows-Dienste auf oder startet einen bestimmten Dienst.
 ##### Beispiel:
@@ -116,48 +116,49 @@
 
 ##### **chkdsk** --> *Überprüft ein Laufwerk auf Dateisystemfehler und repariert sie.
 ##### Beispiel:
-##### **chkdsk C: /f** --> *überprüft Laufwerk C und repariert gefundene Fehler
+##### **chkdsk C: /f** --> *überprüft Laufwerk C und repariert gefundene Fehler*
 
-##### **wmic** --> *Zeigt Systeminformationen über eine WMI-Schnittstelle an (veraltet, aber noch nützlich).
+##### **wmic** --> *Zeigt Systeminformationen über eine WMI-Schnittstelle an (veraltet, aber noch nützlich).*
 ##### Beispiel:
-##### **wmic bios get serialnumber** --> *zeigt die Seriennummer des BIOS an
+##### **wmic bios get serialnumber** --> *zeigt die Seriennummer des BIOS an*
 
-##### **shutdown** --> *Fährt den Computer herunter, startet ihn neu oder meldet Benutzer ab.
+##### **shutdown** --> *Fährt den Computer herunter, startet ihn neu oder meldet Benutzer ab.*
 ##### Beispiel:
-##### **shutdown /r /t 0** --> *startet den PC sofort neu
-##### **shutdown /s /t 60** --> *fährt den PC in 60 Sekunden herunter
+##### **shutdown /r /t 0** --> *startet den PC sofort neu*
+##### **shutdown /s /t 60** --> *fährt den PC in 60 Sekunden herunter*
 
-##### **driverquery** --> *Listet alle installierten Gerätetreiber und deren Status auf.
+##### **driverquery** --> *Listet alle installierten Gerätetreiber und deren Status auf.*
 ##### Beispiel:
-##### **driverquery /v** --> *detaillierte Treiberinformationen
+##### **driverquery /v** --> *detaillierte Treiberinformationen*
 
-##### **sc query** --> *Zeigt den Status eines Windows-Dienstes an.
+##### **sc query** --> *Zeigt den Status eines Windows-Dienstes an.*
 ##### Beispiel:
-##### **sc query spooler** --> *zeigt den Status des Druckerspooler-Dienstes
+##### **sc query spooler** --> *zeigt den Status des Druckerspooler-Dienstes*
 
-##### **net time** --> *Zeigt die aktuelle Uhrzeit eines entfernten Computers oder synchronisiert die Zeit.
+##### **net time** --> *Zeigt die aktuelle Uhrzeit eines entfernten Computers oder synchronisiert die Zeit.*
 ##### Beispiel: 
-##### **net time \\server01** --> *zeigt die Zeit auf dem Server server01
+##### **net time \\server01** --> *zeigt die Zeit auf dem Server server01*
 
-##### **systempropertiesadvanced** --> *Öffnet direkt den Reiter Erweitert in den Systemeigenschaften (Alternative zu sysdm.cpl).
+##### **systempropertiesadvanced** --> *Öffnet direkt den Reiter Erweitert in den Systemeigenschaften (Alternative zu sysdm.cpl).*
 
-##### **ncpa.cpl** --> *Öffnet die Übersicht aller Netzwerkverbindungen im Explorer. (Steht zwar in deiner Beschreibung, aber ohne Erklärung.)
+##### **ncpa.cpl** --> *Öffnet die Übersicht aller Netzwerkverbindungen im Explorer. (Steht zwar in deiner Beschreibung, aber ohne Erklärung.)*
 
-##### **msinfo32** --> *Startet die grafische Systeminformationsübersicht (ähnlich systeminfo, aber GUI-basiert).
+##### **msinfo32** --> *Startet die grafische Systeminformationsübersicht (ähnlich systeminfo, aber GUI-basiert).*
 
-##### **taskmgr** --> *Öffnet direkt den Task-Manager.
+##### **taskmgr** --> *Öffnet direkt den Task-Manager.*
 
-##### **perfmon** --> *Öffnet den Leistungsmonitor, um Systemleistung und Ressourcen zu analysieren.
+##### **perfmon** --> *Öffnet den Leistungsmonitor, um Systemleistung und Ressourcen zu analysieren.*
 
-##### **reg query** --> *Zeigt Werte aus der Windows-Registrierung an.
+##### **reg query** --> *Zeigt Werte aus der Windows-Registrierung an.*
 ##### Beispiel:
 ##### **reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion**
 
-##### **net session** --> *Zeigt aktive SMB-Sitzungen (freigegebene Verbindungen) zu deinem Rechner.
+##### **net session** --> *Zeigt aktive SMB-Sitzungen (freigegebene Verbindungen) zu deinem Rechner.*
 
-##### **net view** --> *Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.
+##### **net view** --> *Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.*
 ##### Beispiel:
 ##### **net view \\server01 → zeigt alle Freigaben auf server01**
+
 
 
 
