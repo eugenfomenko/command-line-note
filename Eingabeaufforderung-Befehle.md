@@ -2,7 +2,7 @@
 
 ##### 
 
-##### **whoami** /**fqdn** ##### --> *gibt den vollqualifizierten Benutzerprinzipalnamen z. B. benutzername@contoso.local*
+##### **whoami** / **fqdn** --> `gibt den vollqualifizierten Benutzerprinzipalnamen z. B. benutzername@contoso.local`
 
 
 
@@ -158,6 +158,7 @@
 ##### **net view** --> *Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.*
 ##### Beispiel:
 ##### **net view \\server01 → zeigt alle Freigaben auf server01**
+
 
 
 
