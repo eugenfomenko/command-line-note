@@ -157,9 +157,10 @@
 
 ##### **net view** --> `Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.`
 
-##### **query user --> Zeigt alle angemeldeten Benutzer auf dem Server (du siehst, ob noch jemand drin ist).**
+##### **query user** --> `Zeigt alle angemeldeten Benutzer auf dem Server (du siehst, ob noch jemand drin ist).`
 
-##### **qwinsta --> Zeigt RDP/Terminalserver-Sitzungen (aktiv/getrennt). Hilft, „vergessene“ Sitzungen zu finden.**
+##### **qwinsta** --> `Zeigt RDP/Terminalserver-Sitzungen (aktiv/getrennt). Hilft, „vergessene“ Sitzungen zu finden.`
+
 
 
 
