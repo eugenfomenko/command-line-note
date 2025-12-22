@@ -156,8 +156,11 @@
 ##### **net session** --> `Zeigt aktive SMB-Sitzungen (freigegebene Verbindungen) zu deinem Rechner.`
 
 ##### **net view** --> `Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.`
-##### Beispiel:
-##### **net view \\server01 → zeigt alle Freigaben auf server01**
+
+##### **query user --> Zeigt alle angemeldeten Benutzer auf dem Server (du siehst, ob noch jemand drin ist).**
+
+##### **qwinsta --> Zeigt RDP/Terminalserver-Sitzungen (aktiv/getrennt). Hilft, „vergessene“ Sitzungen zu finden.**
+
 
 
 
