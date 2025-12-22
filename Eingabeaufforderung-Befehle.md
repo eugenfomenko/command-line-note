@@ -161,6 +161,9 @@
 
 ##### **qwinsta** --> `Zeigt RDP/Terminalserver-Sitzungen (aktiv/getrennt). Hilft, „vergessene“ Sitzungen zu finden.`
 
+##### **route print** --> `Zeigt, ob es eine Route zum Netz 192.168.2.0/24 gibt und über welches Gateway geroutet wird.`
+
+
 
 
 
