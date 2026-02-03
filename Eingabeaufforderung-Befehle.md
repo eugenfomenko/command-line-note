@@ -89,8 +89,10 @@
 ##### **sysdm.cpl** --> `öffnet die Systemeigenschaften (Computername, Hardware, Erweitert, Systemschutz, Remote`
 
 
-##### **net use**r --> `listet alle lokalen Benutzerkonten auf`
+##### **net user** --> `listet alle lokalen Benutzerkonten auf`
 ##### **net user testuser /add** --> `erstellt einen neuen Benutzer namens testuser`
+
+##### **net group** --> `Verwaltet Domänen-(globale) Gruppen in Active Directory. Für lokale Gruppen verwende stattdessen net localgroup.`
 
 ##### **net localgroup** --> `Verwaltet lokale Gruppen und zeigt deren Mitglieder an`
 
@@ -162,6 +164,9 @@
 ##### **qwinsta** --> `Zeigt RDP/Terminalserver-Sitzungen (aktiv/getrennt). Hilft, „vergessene“ Sitzungen zu finden.`
 
 ##### **route print** --> `Zeigt, ob es eine Route zum Netz 192.168.2.0/24 gibt und über welches Gateway geroutet wird.`
+
+##### **secpol.msc** --> `Dort stellt man Sicherheitsregeln für den lokalen PC ein (z. B. Passwort-Regeln, Kontosperren, Benutzerrechte, Audit/Protokollierung).`
+
 
 
 
