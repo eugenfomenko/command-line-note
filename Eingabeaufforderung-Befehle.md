@@ -167,7 +167,7 @@
 
 ##### **secpol.msc** --> `Dort stellt man Sicherheitsregeln für den lokalen PC ein (z. B. Passwort-Regeln, Kontosperren, Benutzerrechte, Audit/Protokollierung).`
 
-
+##### **ipconfig /flushdns** --> `wird verwendet, um den DNS-Resolver-Cache des Computers zu leeren.`
 
 
 
