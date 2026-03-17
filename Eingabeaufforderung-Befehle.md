@@ -169,6 +169,9 @@
 
 ##### **ipconfig /flushdns** --> `wird verwendet, um den DNS-Resolver-Cache des Computers zu leeren.`
 
+##### **printmanagement.msc** --> `öffnet die Druckerverwaltung in Windows.`
+
+
 
 
 
