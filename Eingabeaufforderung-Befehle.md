@@ -18,10 +18,6 @@
 
 
 
-##### **net share** --> `zeigt alle freigegebenen Ordner (Shares) des Computers an und ermöglicht deren Verwaltung`
-
-
-
 ##### **gpresult /r** --> `zeigt eine Zusammenfassung der angewendeten Gruppenrichtlinien für den aktuellen Benutzer und Computer an`
 
 
@@ -89,32 +85,11 @@
 ##### **sysdm.cpl** --> `öffnet die Systemeigenschaften (Computername, Hardware, Erweitert, Systemschutz, Remote`
 
 
-##### **net user** --> `listet alle lokalen Benutzerkonten auf`
-##### **net user testuser /add** --> `erstellt einen neuen Benutzer namens testuser`
-
-##### **net group** --> `Verwaltet Domänen-(globale) Gruppen in Active Directory. Für lokale Gruppen verwende stattdessen net localgroup.`
-
-##### **net localgroup** --> `Verwaltet lokale Gruppen und zeigt deren Mitglieder an`
-
-##### **netstat** --> `Zeigt aktive Netzwerkverbindungen und offene Ports an`
-##### **netstat -ano** → `zeigt alle Verbindungen mit PID (hilfreich zur Zuordnung zu Prozessen`
 
 ##### **arp** --> `Zeigt oder löscht die ARP-Cache-Tabelle, die IP-Adressen mit MAC-Adressen verknüpft.`
 ##### **arp -a** --> `listet alle bekannten IP/MAC-Zuordnungen auf`
 
-##### **net use** --> `Zeigt verbundene Netzlaufwerke oder verbindet neue.`
-##### Beispiel:
-##### **net use** --> `listet alle aktiven Netzverbindungen`
-##### **net use Z: \\Server\Freigabe** --> `verbindet Netzlaufwerk Z: mit einer Freigabe`
 
-##### **net start** --> `Listet alle laufenden Windows-Dienste auf oder startet einen bestimmten Dienst.`
-##### Beispiel:
-##### **net start** --> `zeigt alle laufenden Dienste`
-##### **net start spooler** --> `startet den Druckerspooler`
-
-##### **net stop** --> `Stoppt einen Windows-Dienst.`
-##### Beispiel:
-##### **net stop spooler** --> `beendet den Druckerspooler-Dienst`
 
 ##### **chkdsk** --> `Überprüft ein Laufwerk auf Dateisystemfehler und repariert sie.`
 ##### Beispiel:
@@ -137,9 +112,6 @@
 ##### Beispiel:
 ##### **sc query spooler** --> `zeigt den Status des Druckerspooler-Dienstes`
 
-##### **net time** --> `Zeigt die aktuelle Uhrzeit eines entfernten Computers oder synchronisiert die Zeit.`
-##### Beispiel: 
-##### **net time \\server01** --> `zeigt die Zeit auf dem Server server01`
 
 ##### **systempropertiesadvanced** --> `Öffnet direkt den Reiter Erweitert in den Systemeigenschaften (Alternative zu sysdm.cpl).`
 
@@ -155,9 +127,6 @@
 ##### Beispiel:
 ##### **reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion**
 
-##### **net session** --> `Zeigt aktive SMB-Sitzungen (freigegebene Verbindungen) zu deinem Rechner.`
-
-##### **net view** --> `Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.`
 
 ##### **query user** --> `Zeigt alle angemeldeten Benutzer auf dem Server (du siehst, ob noch jemand drin ist).`
 
@@ -171,10 +140,43 @@
 
 ##### **printmanagement.msc** --> `öffnet die Druckerverwaltung in Windows.`
 
+--------
+
+##### **net share** --> `zeigt alle freigegebenen Ordner (Shares) des Computers an und ermöglicht deren Verwaltung`
 
 
+##### **net user** --> `listet alle lokalen Benutzerkonten auf`
+##### **net user testuser /add** --> `erstellt einen neuen Benutzer namens testuser`
+
+##### **net group** --> `Verwaltet Domänen-(globale) Gruppen in Active Directory. Für lokale Gruppen verwende stattdessen net localgroup.`
+
+##### **net localgroup** --> `Verwaltet lokale Gruppen und zeigt deren Mitglieder an`
+
+##### **netstat** --> `Zeigt aktive Netzwerkverbindungen und offene Ports an`
+##### **netstat -ano** → `zeigt alle Verbindungen mit PID (hilfreich zur Zuordnung zu Prozessen`
 
 
+##### **net use** --> `Zeigt verbundene Netzlaufwerke oder verbindet neue.`
+##### Beispiel:
+##### **net use** --> `listet alle aktiven Netzverbindungen`
+##### **net use Z: \\Server\Freigabe** --> `verbindet Netzlaufwerk Z: mit einer Freigabe`
+
+##### **net start** --> `Listet alle laufenden Windows-Dienste auf oder startet einen bestimmten Dienst.`
+##### Beispiel:
+##### **net start** --> `zeigt alle laufenden Dienste`
+##### **net start spooler** --> `startet den Druckerspooler`
+
+##### **net stop** --> `Stoppt einen Windows-Dienst.`
+##### Beispiel:
+##### **net stop spooler** --> `beendet den Druckerspooler-Dienst`
+
+##### **net session** --> `Zeigt aktive SMB-Sitzungen (freigegebene Verbindungen) zu deinem Rechner.`
+
+##### **net view** --> `Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.`
+
+##### **net time** --> `Zeigt die aktuelle Uhrzeit eines entfernten Computers oder synchronisiert die Zeit.`
+##### Beispiel: 
+##### **net time \\server01** --> `zeigt die Zeit auf dem Server server01`
 
 
 
