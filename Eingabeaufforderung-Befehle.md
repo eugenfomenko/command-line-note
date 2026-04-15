@@ -140,7 +140,6 @@
 
 ##### **printmanagement.msc** --> `öffnet die Druckerverwaltung in Windows.`
 
---------
 
 ##### **net share** --> `zeigt alle freigegebenen Ordner (Shares) des Computers an und ermöglicht deren Verwaltung`
 
@@ -148,7 +147,9 @@
 ##### **net user** --> `listet alle lokalen Benutzerkonten auf`
 ##### **net user testuser /add** --> `erstellt einen neuen Benutzer namens testuser`
 
+
 ##### **net group** --> `Verwaltet Domänen-(globale) Gruppen in Active Directory. Für lokale Gruppen verwende stattdessen net localgroup.`
+
 
 ##### **net localgroup** --> `Verwaltet lokale Gruppen und zeigt deren Mitglieder an`
 
@@ -161,18 +162,23 @@
 ##### **net use** --> `listet alle aktiven Netzverbindungen`
 ##### **net use Z: \\Server\Freigabe** --> `verbindet Netzlaufwerk Z: mit einer Freigabe`
 
+
 ##### **net start** --> `Listet alle laufenden Windows-Dienste auf oder startet einen bestimmten Dienst.`
 ##### Beispiel:
 ##### **net start** --> `zeigt alle laufenden Dienste`
 ##### **net start spooler** --> `startet den Druckerspooler`
 
+
 ##### **net stop** --> `Stoppt einen Windows-Dienst.`
 ##### Beispiel:
 ##### **net stop spooler** --> `beendet den Druckerspooler-Dienst`
 
+
 ##### **net session** --> `Zeigt aktive SMB-Sitzungen (freigegebene Verbindungen) zu deinem Rechner.`
 
+
 ##### **net view** --> `Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners.`
+
 
 ##### **net time** --> `Zeigt die aktuelle Uhrzeit eines entfernten Computers oder synchronisiert die Zeit.`
 ##### Beispiel: 
