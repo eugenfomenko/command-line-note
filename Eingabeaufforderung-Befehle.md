@@ -121,6 +121,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 |--------|--------|-----------------|
 | query user | Remote / Sitzungen | Zeigt alle angemeldeten Benutzer auf dem System oder Server an. |
 | qwinsta | Remote / Sitzungen | Zeigt RDP- bzw. Terminalserver-Sitzungen mit Status wie aktiv oder getrennt an. |
+| logoff <ID> | Remote / Sitzungen | rennt eine Benutzersitzung (z. B. RDP) auf einem lokalen oder entfernten System. |
 
 ---
 
