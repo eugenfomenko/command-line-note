@@ -36,7 +36,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | Befehl | Bereich | Kurzbeschreibung |
 |--------|--------|-----------------|
 | gpresult /r | Gruppenrichtlinien | Zeigt eine Zusammenfassung der angewendeten Gruppenrichtlinien für Benutzer und Computer an. |
-| gpresult /h <Pfad\Dateiname.html> | Erstellt einen ausführlichen HTML-Bericht über die angewendeten Gruppenrichtlinien (GPOs) auf dem lokalen Computer und den aktuell angemeldeten Benutzer. |
+| gpresult /h <Pfad\Dateiname.html> | HTML-Bericht über die angewendeten Gruppenrichtlinien | Erstellt einen vollständigen HTML-Bericht aller wirksamen Gruppenrichtlinien und speichert ihn unter C:\Cymos\result.html. Ideal zur Fehleranalyse in Active-Directory-Umgebungen. |
 | secpol.msc | Sicherheit | Öffnet die lokale Sicherheitsrichtlinie, z. B. für Kennwortrichtlinien, Kontosperren und Benutzerrechte. |
 | reg query | Registry | Liest Werte und Schlüssel aus der Windows-Registrierung aus. |
 | reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion | Registry | Beispiel zum Auslesen eines Registry-Pfads unter `HKLM`. |
