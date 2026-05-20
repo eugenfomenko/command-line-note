@@ -70,6 +70,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | arp | Netzwerk | Zeigt oder löscht die ARP-Cache-Tabelle. |
 | arp -a | Netzwerk | Listet alle bekannten IP-/MAC-Zuordnungen im ARP-Cache auf. |
 | route print | Netzwerk | Zeigt die lokale Routingtabelle und vorhandene Netzrouten an. |
+| tnc | Test-NetConnection | Prüft, ob ein Netzwerkgerät erreichbar ist und ob ein bestimmter TCP-Port geöffnet ist. |
 
 ---
 
