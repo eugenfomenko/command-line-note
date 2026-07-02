@@ -138,6 +138,14 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | systempropertiesadvanced | System | Öffnet direkt den Reiter **Erweitert** in den Systemeigenschaften. |
 | ncpa.cpl | Netzwerk | Öffnet die Übersicht aller Netzwerkverbindungen. |
 | perfmon | Monitoring | Öffnet den Leistungsmonitor zur Analyse von Systemleistung und Ressourcen. |
+| control folders | Windows-Explorer | Ordneroptionen (Datei-Explorer-Optionen) öffnen. |
+| slmgr /dli | Systemlizenzierung | Kurze Lizenzinformationen anzeigen |
+| slmgr /dlv | Systemlizenzierung | Zeigt detaillierte Informationen zur Windows-Lizenz |
+| slmgr /xrp | Systemlizenzierung | Zeigt, ob Windows dauerhaft aktiviert ist |
+| slmgr /ato | Systemlizenzierung | Aktiviert Windows online |
+| slmgr /ipk <Product-Key> | Systemlizenzierung | Installiert einen neuen Product Key |
+| slmgr /upk | Systemlizenzierung | Deinstalliert den Product Key |
+| slmgr /cpky | Systemlizenzierung | Entfernt den Product Key aus der Registry |
 
 ---
 
