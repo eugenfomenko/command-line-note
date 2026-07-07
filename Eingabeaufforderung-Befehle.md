@@ -87,6 +87,8 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | net view | Freigaben / Netzwerk | Zeigt andere Computer im Netzwerk oder Freigaben eines bestimmten Rechners an. |
 | net time | Netzwerk / Zeit | Zeigt die aktuelle Uhrzeit eines entfernten Computers oder synchronisiert die Zeit. |
 | net time \\server01 | Netzwerk / Zeit | Zeigt die Uhrzeit des Servers `server01` an. |
+| netsh advfirewall set allprofiles state on | Windows Defender Firewall | Aktiviert die Windows Defender Firewall für alle Netzwerkprofile (Domäne, Privat und Öffentlich). |
+| netsh advfirewall set allprofiles state off | Windows Defender Firewall | Deaktiviert die Windows Defender Firewall für alle Netzwerkprofile (Domäne, Privat und Öffentlich). |
 
 ---
 
