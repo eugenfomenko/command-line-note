@@ -13,6 +13,8 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | whoami /fqdn | Benutzer / Domäne | Gibt den vollqualifizierten Benutzerprinzipalnamen aus, z. B. `benutzername@contoso.local`. |
 | echo %userdomain% | Benutzer / Domäne | Zeigt die Domäne an, zu der das aktuelle Benutzerkonto gehört. |
 | echo %userdomain%\%username% | Benutzer / Domäne | Zeigt den vollständigen Anmeldenamen des aktuellen Benutzers. |
+| netdom resetpwd | Benutzer / Domäne | Computerkonto-Kennwort zurücksetzen und die Vertrauensstellung zur AD-Domäne reparieren. |
+| klist purge | Windows Active Directory-Domäne | Löscht alle zwischengespeicherten Kerberos-Tickets des aktuell angemeldeten Benutzers. |
 
 ---
 
@@ -28,6 +30,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | wmic bios get serialnumber | System / Hardware | Zeigt die Seriennummer des BIOS bzw. Geräts an. |
 | driverquery | Treiber | Listet installierte Gerätetreiber und deren Status auf. |
 | driverquery /v | Treiber | Zeigt detaillierte Informationen zu installierten Gerätetreibern an. |
+| slmgr.vbs /rearm | Windows-Systemlizenzierung und Aktivierung | Setzt den Windows-Aktivierungs- bzw. Lizenzierungsstatus zurück und initialisiert die Aktivierungsfrist neu. |
 
 ---
 
@@ -40,6 +43,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | secpol.msc | Sicherheit | Öffnet die lokale Sicherheitsrichtlinie, z. B. für Kennwortrichtlinien, Kontosperren und Benutzerrechte. |
 | reg query | Registry | Liest Werte und Schlüssel aus der Windows-Registrierung aus. |
 | reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion | Registry | Beispiel zum Auslesen eines Registry-Pfads unter `HKLM`. |
+| gpupdate /force | Gruppenrichtlinien | Aktualisiert Gruppenrichtlinien (Group Policy) sofort für Computer und Benutzer. |
 
 ---
 
@@ -89,6 +93,10 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | net time \\server01 | Netzwerk / Zeit | Zeigt die Uhrzeit des Servers `server01` an. |
 | netsh advfirewall set allprofiles state on | Windows Defender Firewall | Aktiviert die Windows Defender Firewall für alle Netzwerkprofile (Domäne, Privat und Öffentlich). |
 | netsh advfirewall set allprofiles state off | Windows Defender Firewall | Deaktiviert die Windows Defender Firewall für alle Netzwerkprofile (Domäne, Privat und Öffentlich). |
+| net stop dhcpserver | DHCP-Lease | DHCP-Dienst beenden |
+| net start dhcpserver | DHCP-Lease | DHCP-Dienst starten |
+| net stop dhcp | DHCP-Clientdienst | DHCP-Clientdienst stopen |
+| net start dhcp | DHCP-Clientdienst | DHCP-Clientdienst starten |
 
 ---
 
