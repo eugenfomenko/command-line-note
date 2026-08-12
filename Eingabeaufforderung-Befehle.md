@@ -15,6 +15,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | echo %userdomain%\%username% | Benutzer / Domäne | Zeigt den vollständigen Anmeldenamen des aktuellen Benutzers. |
 | netdom resetpwd | Benutzer / Domäne | Computerkonto-Kennwort zurücksetzen und die Vertrauensstellung zur AD-Domäne reparieren. |
 | klist purge | Windows Active Directory-Domäne | Löscht alle zwischengespeicherten Kerberos-Tickets des aktuell angemeldeten Benutzers. |
+| cmdkey /list | Benutzer-Anmeldeinformationen | Zeigt alle gespeicherten Windows-Anmeldeinformationen an, die über den Windows-Anmeldeinformations-Manager für den aktuell angemeldeten Benutzer hinterlegt sind. |
 
 ---
 
