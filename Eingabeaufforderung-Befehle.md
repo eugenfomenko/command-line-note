@@ -70,12 +70,17 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | ipconfig /flushdns | Netzwerk | Leert den lokalen DNS-Resolver-Cache. |
 | ping <ziel> | Netzwerk | Prüft Erreichbarkeit und Antwortzeit eines Hosts per ICMP. |
 | tracert <ziel> | Netzwerk | Zeigt die Route der Pakete zu einem Zielhost inklusive Hops an. |
+| tracert -d 8.8.8.8 | Netzwerk | Zeigt den Netzwerkweg des Rechners bis zur IP-Adresse 8.8.8.8 (Google DNS) an. |
 | pathping <ziel> | Netzwerk | Kombiniert `ping` und `tracert` und liefert zusätzliche Statistiken zu Paketverlusten. |
 | nslookup <ziel> | DNS | Fragt DNS-Server ab, um Namen in IP-Adressen aufzulösen oder umgekehrt. |
 | arp | Netzwerk | Zeigt oder löscht die ARP-Cache-Tabelle. |
 | arp -a | Netzwerk | Listet alle bekannten IP-/MAC-Zuordnungen im ARP-Cache auf. |
 | route print | Netzwerk | Zeigt die lokale Routingtabelle und vorhandene Netzrouten an. |
 | tnc | Test-NetConnection | Prüft, ob ein Netzwerkgerät erreichbar ist und ob ein bestimmter TCP-Port geöffnet ist. |
+| curl -4 https://api.ipify.org | Netzwerkanalyse | Zeigt deine öffentliche IPv4-Adresse an. |
+| nslookup myip.opendns.com resolver1.opendns.com | Netzwerkanalyse | Öffentliche IP-Adresse über OpenDNS abgefragt. |
+
+
 
 ---
 
