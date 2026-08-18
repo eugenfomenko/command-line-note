@@ -75,6 +75,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | nslookup <ziel> | DNS | Fragt DNS-Server ab, um Namen in IP-Adressen aufzulösen oder umgekehrt. |
 | arp | Netzwerk | Zeigt oder löscht die ARP-Cache-Tabelle. |
 | arp -a | Netzwerk | Listet alle bekannten IP-/MAC-Zuordnungen im ARP-Cache auf. |
+| arp -d * | Netzwerk | Löscht den kompletten ARP-Cache des Windows-PCs. |
 | route print | Netzwerk | Zeigt die lokale Routingtabelle und vorhandene Netzrouten an. |
 | route print -4 | Netzwerk | Damit sieht man, über welche Netzwerkschnittstelle und welches Gateway Windows Daten zu bestimmten IPv4-Netzen sendet. |
 | tnc | Test-NetConnection | Prüft, ob ein Netzwerkgerät erreichbar ist und ob ein bestimmter TCP-Port geöffnet ist. |
