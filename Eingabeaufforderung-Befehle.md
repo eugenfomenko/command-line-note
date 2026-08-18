@@ -76,6 +76,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | arp | Netzwerk | Zeigt oder löscht die ARP-Cache-Tabelle. |
 | arp -a | Netzwerk | Listet alle bekannten IP-/MAC-Zuordnungen im ARP-Cache auf. |
 | route print | Netzwerk | Zeigt die lokale Routingtabelle und vorhandene Netzrouten an. |
+| route print -4 | Netzwerk | Damit sieht man, über welche Netzwerkschnittstelle und welches Gateway Windows Daten zu bestimmten IPv4-Netzen sendet. |
 | tnc | Test-NetConnection | Prüft, ob ein Netzwerkgerät erreichbar ist und ob ein bestimmter TCP-Port geöffnet ist. |
 | curl -4 https://api.ipify.org | Netzwerkanalyse | Zeigt deine öffentliche IPv4-Adresse an. |
 | nslookup myip.opendns.com resolver1.opendns.com | Netzwerkanalyse | Öffentliche IP-Adresse über OpenDNS abgefragt. |
