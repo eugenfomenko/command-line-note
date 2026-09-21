@@ -56,6 +56,12 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | dism /online /cleanup-image /restorehealth | Systemreparatur | Prüft und repariert das Windows-Komponentenstore-Abbild. |
 | chkdsk | Datenträger | Überprüft ein Laufwerk auf Dateisystemfehler. |
 | chkdsk C: /f | Datenträger | Prüft Laufwerk `C:` und repariert gefundene Fehler. |
+| diskpart | Datenträger | Startet die Verwaltung von Datenträgern und Partitionen. |
+| list volume | Datenträger | Zeigt in DiskPart alle Volumes mit Laufwerksbuchstaben, Größe und Dateisystem. |
+| exit | DiskPart / CMD | Beendet DiskPart. In der normalen Eingabeaufforderung schließt es das Fenster. |
+| dir E:\Windows | Dateisystem | Zeigt den Inhalt des Windows-Ordners auf E:. Dient zur Prüfung des Installationspfads. |
+| dism /image:E:\ /cleanup-image /revertpendingactions | Systemreparatur | ZMacht ausstehende Windows-Wartungsaktionen der Offline-Installation auf E: rückgängig. Zur Wiederherstellung bei Startproblemen. |
+
 
 ---
 
@@ -174,3 +180,4 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | shutdown | Systemaktion | Fährt den Computer herunter, startet ihn neu oder meldet Benutzer ab. |
 | shutdown /r /t 0 | Systemaktion | Startet den PC sofort neu. |
 | shutdown /s /t 60 | Systemaktion | Fährt den PC in 60 Sekunden herunter. |
+| wpeutil reboot | Neustart / Wiederherstellung | Startet den PC aus der Windows-PE- oder Wiederherstellungsumgebung neu. |
