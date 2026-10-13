@@ -32,6 +32,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | driverquery | Treiber | Listet installierte Gerätetreiber und deren Status auf. |
 | driverquery /v | Treiber | Zeigt detaillierte Informationen zu installierten Gerätetreibern an. |
 | slmgr.vbs /rearm | Windows-Systemlizenzierung und Aktivierung | Setzt den Windows-Aktivierungs- bzw. Lizenzierungsstatus zurück und initialisiert die Aktivierungsfrist neu. |
+| powercfg /batteryreport | Computername, System & Hardware | Erstellt einen HTML-Bericht über den Zustand des Laptop-Akkus. |
 
 ---
 
@@ -45,6 +46,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | reg query | Registry | Liest Werte und Schlüssel aus der Windows-Registrierung aus. |
 | reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion | Registry | Beispiel zum Auslesen eines Registry-Pfads unter `HKLM`. |
 | gpupdate /force | Gruppenrichtlinien | Aktualisiert Gruppenrichtlinien (Group Policy) sofort für Computer und Benutzer. |
+| manage-bde -status C: | Gruppenrichtlinien, Sicherheit & Registry | Zeigt den BitLocker-Verschlüsselungsstatus von Laufwerk C: an. |
 
 ---
 
@@ -52,15 +54,22 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 
 | Befehl | Bereich | Kurzbeschreibung |
 |--------|--------|-----------------|
+| bcdedit /enum all | Systemreparatur, Integrität & Datenträger | Zeigt alle Windows-Starteinträge und Boot-Einstellungen an. |
+| bcdedit /store S:\EFI\Microsoft\Boot\BCD /enum all | Systemreparatur, Integrität & Datenträger | Liest die Boot-Konfiguration aus der angegebenen BCD-Datei. |
+| bcdboot C:\Windows /s S: /f UEFI | Systemreparatur, Integrität & Datenträger | Erstellt die Windows-Startdateien auf der EFI-Partition S: neu. |
 | sfc /scannow | Systemreparatur | Überprüft geschützte Systemdateien und repariert beschädigte Dateien automatisch. |
 | dism /online /cleanup-image /restorehealth | Systemreparatur | Prüft und repariert das Windows-Komponentenstore-Abbild. |
+| dism /image:E:\ /cleanup-image /revertpendingactions | Systemreparatur | ZMacht ausstehende Windows-Wartungsaktionen der Offline-Installation auf E: rückgängig. Zur Wiederherstellung bei Startproblemen. |
 | chkdsk | Datenträger | Überprüft ein Laufwerk auf Dateisystemfehler. |
 | chkdsk C: /f | Datenträger | Prüft Laufwerk `C:` und repariert gefundene Fehler. |
 | diskpart | Datenträger | Startet die Verwaltung von Datenträgern und Partitionen. |
 | list volume | Datenträger | Zeigt in DiskPart alle Volumes mit Laufwerksbuchstaben, Größe und Dateisystem. |
 | exit | DiskPart / CMD | Beendet DiskPart. In der normalen Eingabeaufforderung schließt es das Fenster. |
 | dir E:\Windows | Dateisystem | Zeigt den Inhalt des Windows-Ordners auf E:. Dient zur Prüfung des Installationspfads. |
-| dism /image:E:\ /cleanup-image /revertpendingactions | Systemreparatur | ZMacht ausstehende Windows-Wartungsaktionen der Offline-Installation auf E: rückgängig. Zur Wiederherstellung bei Startproblemen. |
+| reagentc /info | Systemreparatur, Integrität & Datenträger | Zeigt den Status der Windows-Wiederherstellungsumgebung an. |
+
+
+
 
 
 ---
@@ -87,6 +96,9 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | tnc | Test-NetConnection | Prüft, ob ein Netzwerkgerät erreichbar ist und ob ein bestimmter TCP-Port geöffnet ist. |
 | curl -4 https://api.ipify.org | Netzwerkanalyse | Zeigt deine öffentliche IPv4-Adresse an. |
 | nslookup myip.opendns.com resolver1.opendns.com | Netzwerkanalyse | Öffentliche IP-Adresse über OpenDNS abgefragt. |
+| getmac /v | Netzwerk – Grunddiagnose | Zeigt MAC-Adressen und Informationen zu Netzwerkadaptern an. |
+| netsh interface ipv4 show config | Netzwerk – Grunddiagnose | Zeigt die IPv4-Konfiguration aller Netzwerkadapter an. |
+
 
 
 
@@ -111,6 +123,7 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | net start dhcpserver | DHCP-Lease | DHCP-Dienst starten |
 | net stop dhcp | DHCP-Clientdienst | DHCP-Clientdienst stopen |
 | net start dhcp | DHCP-Clientdienst | DHCP-Clientdienst starten |
+| net config workstation | Netzwerk – Verbindungen, Ports & Freigaben | Zeigt die Konfiguration des Windows-Arbeitsstationsdienstes an. |
 
 ---
 
@@ -170,6 +183,13 @@ Diese Liste enthält wichtige CMD-Befehle und administrative Windows-Befehle mit
 | slmgr /ipk <Product-Key> | Systemlizenzierung | Installiert einen neuen Product Key |
 | slmgr /upk | Systemlizenzierung | Deinstalliert den Product Key |
 | slmgr /cpky | Systemlizenzierung | Entfernt den Product Key aus der Registry |
+| wevtutil qe System /c:20 /rd:true /f:text | Windows-Verwaltung & grafische Systemtools | Zeigt die letzten 20 Einträge des Windows-Systemprotokolls an. |
+| wevtutil qe Application /c:20 /rd:true /f:text | Windows-Verwaltung & grafische Systemtools | Zeigt die letzten 20 Einträge des Windows-Anwendungsprotokolls an. |
+| dism /online /add-capability | Windows-Verwaltung & grafische Systemtools | Der Befehl installiert optionale Windows-Komponenten |
+| DISM.exe /Online /Add-Capability /CapabilityName:Print.Management.Console~~~~0.0.1.0| Windows-Verwaltung & grafische Systemtools | Der Befehl installiert optionale Windows-Komponenten, in diesem Fall die Druckverwaltung (Print Management Console). |
+
+
+
 
 ---
 
